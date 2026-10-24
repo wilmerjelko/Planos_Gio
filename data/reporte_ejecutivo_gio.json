@@ -1,5 +1,5 @@
 {
-  "fecha_generacion": "2026-10-24T12:05:29.439187",
+  "fecha_generacion": "2026-10-24T17:05:39.136162",
   "total_archivos_multimedia": 3,
   "reglas_negocio_activas": {
     "empresa": "Planos Gio",
@@ -104,7 +104,7 @@
   ],
   "simulaciones_ejemplo": [
     {
-      "orden_id": "PG-2026-120529",
+      "orden_id": "PG-2026-170539",
       "ciudad": "Arequipa",
       "es_lima": false,
       "paquete_id": "planos_completo",
@@ -127,7 +127,7 @@
       }
     },
     {
-      "orden_id": "PG-2026-120529",
+      "orden_id": "PG-2026-170539",
       "ciudad": "Surco, Lima",
       "es_lima": true,
       "paquete_id": "remodelacion_lima",
@@ -150,7 +150,7 @@
       }
     },
     {
-      "orden_id": "PG-2026-120529",
+      "orden_id": "PG-2026-170539",
       "ciudad": "Trujillo",
       "es_lima": false,
       "paquete_id": "remodelacion_distancia",
