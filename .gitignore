@@ -1,0 +1,5 @@
+# Mantener el PDF original de SUNAT privado en la PC local (no subir DNIs a repo público)
+ficha ruc gio sac.pdf
+__pycache__/
+*.pyc
+.DS_Store

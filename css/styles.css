@@ -1,0 +1,90 @@
+/* ==========================================================================
+   PLANOS GIO - Sistema Integral de Ventas, Diseño de Planos & Remodelación
+   Estilos personalizados complementarios a Tailwind CSS
+   ========================================================================== */
+
+:root {
+  --gio-navy: #0f172a;
+  --gio-blue: #1e3a8a;
+  --gio-amber: #f59e0b;
+  --gio-emerald: #10b981;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fondo estilo plano arquitectónico técnico sutil */
+.blueprint-grid {
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(56, 189, 248, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.035) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+.blueprint-light {
+  background-color: #f8fafc;
+  background-image: 
+    linear-gradient(rgba(30, 58, 138, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 58, 138, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Animaciones suaves */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+  }
+}
+
+.btn-glow {
+  animation: pulseGlow 2.4s infinite;
+}
+
+/* Scrollbar limpio para el chat IA y tablas */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.06);
+  border-radius: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Impresión limpia para la Orden de Servicio / Contrato PDF */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-contract,
+  #printable-contract * {
+    visibility: visible;
+  }
+  #printable-contract {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+}

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos Gio | Diseño de Planos en Todo el Perú & Remodelaciones en Lima</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <!-- BARRA SUPERIOR DE NAVEGACIÓN UNIFICADA (CLIENTE + MODO AUTOMÁTICO CEO) -->
+  <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="switchMainTab('web-publica')">
+        <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 font-black text-xl flex items-center justify-center shadow">
+          PG
+        </div>
+        <div>
+          <div class="font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-2">
+            PLANOS GIO
+            <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-semibold">
+              RUC 20610282963
+            </span>
+          </div>
+          <p class="text-xs text-slate-400">GIO, GRUPO INGENIEROS S.A.C. • Planos (Todo el Perú) & Remodelaciones (Lima)</p>
+        </div>
+      </div>
+
+      <!-- Pestañas del Ecosistema -->
+      <nav class="flex flex-wrap items-center gap-1.5">
+        <button id="nav-web-publica" onclick="switchMainTab('web-publica')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-amber-500 text-slate-950 shadow transition">
+          🌐 1. Web & Portafolio
+        </button>
+        <button id="nav-cotizador" onclick="switchMainTab('cotizador')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+          🧮 2. Cotizador + Metrado
+        </button>
+        <button id="nav-agente-ia" onclick="switchMainTab('agente-ia')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+          🤖 3. Vendedor IA 24/7
+        </button>
+        <button id="nav-fabrica-redes" onclick="switchMainTab('fabrica-redes')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+          🎬 4. Fábrica TikTok/IG
+        </button>
+        <button id="nav-panel-ceo" onclick="switchMainTab('panel-ceo')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+          🔒 5. CRM, Pagos & Marca Agua
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <!-- ======================================================================
+         SECCIÓN 1: WEB OFICIAL PÚBLICA + DIFERENCIADOR + PORTAFOLIO REAL
+         ====================================================================== -->
+    <section id="sec-web-publica" class="space-y-14 pb-16">
+      <!-- HERO PRINCIPAL -->
+      <div class="blueprint-grid border-b border-slate-800 py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-bold">
+              <span>⚡ DIFERENCIADOR ÚNICO EN PERÚ:</span> Planos 2D/3D + Guía de Materiales Anti-Engaño
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+              Diseñamos los <span class="text-amber-400">Planos de tu Casa en Todo el Perú</span> y Ejecutamos tu <span class="text-sky-400">Remodelación en Lima</span> sin Sorpresas.
+            </h1>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              No construyas a ciegas ni permitas que te pidan material de más. Obtén planos completos de <b>Arquitectura, Estructuras, Instalaciones Eléctricas, Sanitarias y Vistas 3D</b> con presupuesto al instante y entregas protegidas por hitos.
+            </p>
+
+            <!-- Botones de Conversión Directa -->
+            <div class="flex flex-wrap gap-3 pt-2">
+              <button onclick="switchMainTab('cotizador')" class="btn-glow px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm sm:text-base shadow-lg transition">
+                🧮 Cotizar mis m² en 10 Segundos →
+              </button>
+              <button onclick="switchMainTab('agente-ia')" class="px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold text-sm sm:text-base transition">
+                🤖 Hablar con Asesor IA 24/7
+              </button>
+              <a href="https://wa.me/51993952844?text=Hola%20Planos%20Gio%20(GIO%20GRUPO%20INGENIEROS%20SAC)%2C%20deseo%20cotizar%20un%20proyecto" target="_blank" class="px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow transition flex items-center gap-2">
+                📱 WhatsApp / Yape: 993 952 844
+              </a>
+            </div>
+
+            <!-- Sellos de Confianza -->
+            <div class="grid grid-cols-3 gap-3 pt-4 border-t border-slate-800/80 text-xs">
+              <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl">
+                <div class="font-black text-amber-400 text-sm">🇵🇪 24 Regiones</div>
+                <div class="text-slate-400">Diseño de Planos 100% Online en todo el Perú</div>
+              </div>
+              <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl">
+                <div class="font-black text-sky-400 text-sm">🛠️ Lima (Av. Arequipa 1421)</div>
+                <div class="text-slate-400">Remodelación Llave en Mano con Garantía</div>
+              </div>
+              <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl">
+                <div class="font-black text-emerald-400 text-sm">🏛️ RUC 20610282963</div>
+                <div class="text-slate-400">GIO, GRUPO INGENIEROS S.A.C. • Factura y Boleta</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagen Destacada del Ciclo / Isométrico 3D -->
+          <div class="lg:col-span-5">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3 shadow-2xl space-y-3">
+              <img src="assets/img/plano_3d_isometrico.jpg" alt="Plano 3D Isométrico Planos Gio" class="w-full h-72 sm:h-80 object-cover rounded-xl" />
+              <div class="p-2 flex items-center justify-between text-xs">
+                <div>
+                  <span class="font-bold text-white">Vista 3D + Plano AutoCAD + Metrado</span>
+                  <p class="text-slate-400">Así entiendes cada ambiente antes de poner un ladrillo</p>
+                </div>
+                <button onclick="switchMainTab('cotizador')" class="px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold">
+                  Simular Precio
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NUESTRO DIFERENCIADOR TRIPLE (POR QUÉ NOS ELIGEN) -->
+      <div class="max-w-7xl mx-auto px-4 space-y-6">
+        <div class="text-center max-w-3xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Qué nos diferencia de los demás</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">El Método "Construcción Sin Engaños" de Planos Gio</h2>
+          <p class="text-slate-400 text-sm">Resolvemos los 3 problemas que hacen perder miles de soles a las familias peruanas cuando construyen o remodelan.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-xl">
+              🧱
+            </div>
+            <h3 class="text-lg font-bold text-white">1. Guía de Materiales "Anti-Engaño"</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              No solo te damos líneas en AutoCAD. Te entregamos el estimado de bolsas de cemento, ladrillos y varillas de fierro para que ningún maestro te pida material de más.
+            </p>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-500/20 border border-sky-500/40 flex items-center justify-center text-xl">
+              🏠
+            </div>
+            <h3 class="text-lg font-bold text-white">2. Planos en 2D + Vistas 3D Claras</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Sabemos que un plano técnico 2D puede ser confuso. Por eso incluimos vistas isométricas 3D para que tú y tu familia vean exactamente cómo quedará cada habitación.
+            </p>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-xl">
+              🔒
+            </div>
+            <h3 class="text-lg font-bold text-white">3. Contrato Digital y Pagos 50-30-20</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Cero informalidad: emitimos tu Orden de Servicio Digital, revisas avances en nuestro Visor Web y pagas escalonadamente conforme apruebas cada etapa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GALERÍA DE PORTAFOLIO (ANTES / PROPUESTA / OBRA REAL) -->
+      <div class="max-w-7xl mx-auto px-4 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Portafolio Verificado</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-white">Nuestros Trabajos de Planos y Remodelación</h2>
+          </div>
+          <!-- Botón para que el dueño suba sus fotos improvisadas directamente -->
+          <label class="cursor-pointer px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold text-amber-400 flex items-center gap-2">
+            <span>📸 + Subir Mi Foto de Obra / Plano al Portafolio</span>
+            <input type="file" accept="image/*" onchange="addCustomPortfolioPhoto(event)" class="hidden" />
+          </label>
+        </div>
+
+        <div id="portfolio-grid" class="grid md:grid-cols-3 gap-6"></div>
+      </div>
+
+      <!-- INFOGRAFÍA DEL CICLO DE TRABAJO -->
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 grid md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-5">
+            <img src="assets/img/infografia_ciclo.jpg" alt="Ciclo de Trabajo Planos Gio" class="w-full rounded-xl border border-slate-700 shadow-lg" />
+          </div>
+          <div class="md:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase text-amber-400">Cómo trabajamos paso a paso</span>
+            <h3 class="text-2xl font-black text-white">Un Proceso Rápido, Formal y 100% Transparente</h3>
+            <div class="space-y-3 text-xs sm:text-sm">
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                <b class="text-amber-400">Paso 1 — Cotización Instantánea Web:</b> Ingresas tus m², pisos y ciudad en nuestra calculadora y conoces tu inversión en 10 segundos.
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                <b class="text-sky-400">Paso 2 — Orden de Servicio y Adelanto 50% (o Reserva S/ 80):</b> Recibes tu contrato formal y abonas por Yape, Plin o BCP para iniciar el diseño o agendar Visita Técnica en Lima.
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                <b class="text-emerald-400">Paso 3 — Revisión en Visor Protegido (30%) y Entrega Final (20%):</b> Apruebas la distribución en vivo y, al liquidar el último 20%, descargas tus planos PDF HD y AutoCAD (.DWG).
+              </div>
+            </div>
+            <button onclick="switchMainTab('cotizador')" class="px-5 py-3 rounded-xl bg-amber-500 text-slate-950 font-black text-sm">
+              Ir al Cotizador Instantáneo →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 2: COTIZADOR INSTANTÁNEO + ESTIMADOR DE MATERIALES ANTI-ENGAÑO
+         ====================================================================== -->
+    <section id="sec-cotizador" class="hidden py-10 max-w-7xl mx-auto px-4 space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold">FILTRO AUTOMÁTICO DE CLIENTES</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">Cotizador Instantáneo + Estimador de Materiales</h2>
+        <p class="text-slate-400 text-sm">Configura tu proyecto y obtén al instante el presupuesto cerrado, el cronograma de pagos 50-30-20 y la guía preliminar de materiales.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Formulario de Configuración -->
+        <div class="lg:col-span-6 bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-5 shadow-xl">
+          <h3 class="font-bold text-lg text-white border-b border-slate-800 pb-3">1. Datos del Terreno o Espacio a Remodelar</h3>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">Tu Nombre Completo</label>
+              <input id="q-client-name" type="text" placeholder="Ej. Juan Pérez" oninput="calculateInstantQuote()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">Tu WhatsApp / Celular</label>
+              <input id="q-client-phone" type="text" placeholder="Ej. 987 654 321" oninput="calculateInstantQuote()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">📍 Ciudad / Departamento del Proyecto</label>
+            <select id="q-city" onchange="calculateInstantQuote()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white"></select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">📐 Servicio o Paquete que Necesitas</label>
+            <select id="q-package" onchange="calculateInstantQuote()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white"></select>
+          </div>
+
+          <!-- Alerta Dinámica de Regla Geográfica (Cuando provincia elige Remodelación Lima) -->
+          <div id="q-geo-alert" class="hidden p-3.5 rounded-xl bg-amber-500/15 border border-amber-500/40 text-amber-200 text-xs leading-relaxed"></div>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div>
+              <div class="flex justify-between text-xs font-bold mb-1.5">
+                <span class="text-slate-300">📏 Área del Terreno / Espacio (m²)</span>
+                <span id="q-m2-label" class="text-amber-400 font-black">120 m²</span>
+              </div>
+              <input id="q-m2" type="range" min="20" max="400" step="5" value="120" oninput="calculateInstantQuote()" class="w-full accent-amber-500" />
+              <div class="flex justify-between text-xs text-slate-500 mt-1">
+                <span>20 m² (Baño/Cocina)</span>
+                <span>120 m² (Casa)</span>
+                <span>400 m²</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">🏢 Número de Pisos / Niveles</label>
+              <select id="q-floors" onchange="calculateInstantQuote()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
+                <option value="1">1 Piso / Nivel</option>
+                <option value="2" selected>2 Pisos / Niveles</option>
+                <option value="3">3 Pisos / Niveles</option>
+                <option value="4">4 Pisos + Azotea</option>
+                <option value="5">5 Pisos (Multifamiliar)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Resultado + Candado de Pago 50-30-20 + Materiales -->
+        <div class="lg:col-span-6 bg-slate-900 border-2 border-amber-500/60 rounded-2xl p-6 space-y-5 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+            <div>
+              <span id="res-scope-badge" class="text-xs font-bold text-sky-400">Lima • 120 m² (2 niveles)</span>
+              <h3 id="res-pkg-name" class="text-lg font-black text-white">🥇 Paquete Construcción Segura</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400">Inversión Total Estimada</div>
+              <div id="res-total-price" class="text-3xl font-black text-amber-400">S/ 2,808</div>
+              <div class="text-xs text-emerald-400">Entrega en: <b id="res-days">9 días hábiles</b></div>
+            </div>
+          </div>
+
+          <!-- Desglose del Candado Anti-No-Pago (50% - 30% - 20%) -->
+          <div class="space-y-2">
+            <div class="text-xs font-bold text-white flex items-center justify-between">
+              <span>🔒 Cronograma de Pagos Blindado (3 Hitos con Orden de Servicio):</span>
+              <span class="text-emerald-400">Cero Riesgo</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2.5 text-center">
+              <div class="p-3 rounded-xl bg-slate-950 border border-emerald-500/40">
+                <div class="text-xs font-bold text-emerald-400">1️⃣ Inicio (50%)</div>
+                <div id="res-h1" class="text-base font-black text-white my-0.5">S/ 1,404</div>
+                <div class="text-xs text-slate-400">Activa Orden y Diseño</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-amber-500/40">
+                <div class="text-xs font-bold text-amber-400">2️⃣ Avance (30%)</div>
+                <div id="res-h2" class="text-base font-black text-white my-0.5">S/ 842</div>
+                <div class="text-xs text-slate-400">Aprobación Visor</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-sky-500/40">
+                <div class="text-xs font-bold text-sky-400">3️⃣ Final (20%)</div>
+                <div id="res-h3" class="text-base font-black text-white my-0.5">S/ 562</div>
+                <div class="text-xs text-slate-400">Libera CAD y PDF HD</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lista de Entregables -->
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-2">
+            <div class="text-xs font-bold text-amber-400">📋 ¿Qué incluye exactamente tu servicio?</div>
+            <ul id="res-includes-list" class="space-y-1.5"></ul>
+          </div>
+
+          <!-- Diferenciador: Estimación Preliminar de Materiales de Obra -->
+          <div class="bg-slate-950/90 border border-sky-500/30 rounded-xl p-4 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-sky-400">🧱 Bono Diferenciador: Pre-Metrado Referencial de Obra</span>
+              <span class="text-xs text-slate-400">Evita robo de material</span>
+            </div>
+            <div class="grid grid-cols-4 gap-2 text-center pt-1">
+              <div class="p-2 rounded bg-slate-900 border border-slate-800">
+                <div class="text-xs text-slate-400">Cemento</div>
+                <div id="mat-cemento" class="text-xs font-bold text-white">~912 bolsas</div>
+              </div>
+              <div class="p-2 rounded bg-slate-900 border border-slate-800">
+                <div class="text-xs text-slate-400">Ladrillo KK</div>
+                <div id="mat-ladrillo" class="text-xs font-bold text-white">~9.1 millares</div>
+              </div>
+              <div class="p-2 rounded bg-slate-900 border border-slate-800">
+                <div class="text-xs text-slate-400">Fierro Corrug.</div>
+                <div id="mat-fierro" class="text-xs font-bold text-white">~576 varillas</div>
+              </div>
+              <div class="p-2 rounded bg-slate-900 border border-slate-800">
+                <div class="text-xs text-slate-400">Pts Luz/Agua</div>
+                <div id="mat-puntos" class="text-xs font-bold text-white">~108 salidas</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de Cierre -->
+          <div class="grid sm:grid-cols-3 gap-2.5 pt-2">
+            <button onclick="confirmAndLockQuote('ia')" class="px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm shadow">
+              🤖 Cerrar con Agente IA
+            </button>
+            <button onclick="confirmAndLockQuote('contract')" class="px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow">
+              📄 Generar Orden PDF
+            </button>
+            <button onclick="confirmAndLockQuote('whatsapp')" class="px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold text-xs sm:text-sm">
+              📱 Enviar a WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 3: AGENTE DE VENTAS IA 24/7 CON REGLAS DE NEGOCIO Y CIERRE
+         ====================================================================== -->
+    <section id="sec-agente-ia" class="hidden py-10 max-w-7xl mx-auto px-4 space-y-6">
+      <div class="grid lg:grid-cols-12 gap-6">
+        <!-- Columna Izquierda: Reglas Comerciales Activas + Simulador 1-Clic -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase text-amber-400">Cerebro Comercial IA</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs font-bold">Activo 24/7 ($0)</span>
+            </div>
+            <h3 class="text-lg font-black text-white">Reglas de Negocio Programadas</h3>
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="p-2.5 rounded-lg bg-slate-950 border border-slate-800">
+                ✅ <b>Regla 1 (Todo el Perú):</b> Si pide <i>Planos</i>, cotiza y cierra para cualquiera de los 24 departamentos de forma 100% digital.
+              </li>
+              <li class="p-2.5 rounded-lg bg-slate-950 border border-slate-800">
+                ✅ <b>Regla 2 (Solo Lima):</b> Si pide <i>Remodelación física</i> en Lima, vende el proyecto y agenda <b>Visita Técnica (S/ 80 descontables)</b>.
+              </li>
+              <li class="p-2.5 rounded-lg bg-slate-950 border border-slate-800">
+                ✅ <b>Regla 3 (Pivot Provincia):</b> Si pide <i>Remodelación</i> desde provincia, no pierde la venta: le ofrece el <b>Pack Remodelación a Distancia</b>.
+              </li>
+              <li class="p-2.5 rounded-lg bg-slate-950 border border-slate-800">
+                ✅ <b>Regla 4 (Anti-No-Pago):</b> Si pide "bosquejo gratis" o "pagar todo al final", aplica el candado de Orden de Servicio 50%-30%-20% o Reserva S/ 80.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Simulador de Escenarios en 1 Clic -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3">
+            <h4 class="text-sm font-bold text-white">🧪 Prueba al Vendedor IA en 1 Clic:</h4>
+            <p class="text-xs text-slate-400">Haz clic en cualquier caso para ver cómo Gio IA cierra la venta automáticamente:</p>
+            <div class="space-y-2">
+              <button onclick="simulateAIScenario('arequipa_planos')" class="w-full text-left p-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-amber-300 font-semibold transition">
+                ▶️ Caso 1: Cliente de Arequipa pide planos de 120m²
+              </button>
+              <button onclick="simulateAIScenario('lima_remodelacion')" class="w-full text-left p-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-sky-300 font-semibold transition">
+                ▶️ Caso 2: Cliente en Surco (Lima) pide remodelar cocina
+              </button>
+              <button onclick="simulateAIScenario('trujillo_pivot')" class="w-full text-left p-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-emerald-300 font-semibold transition">
+                ▶️ Caso 3: Cliente en Trujillo pide remodelación (Pivot)
+              </button>
+              <button onclick="simulateAIScenario('objecion_gratis')" class="w-full text-left p-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-rose-300 font-semibold transition">
+                ▶️ Caso 4: Cliente pide "bosquejo gratis y pagar al final"
+              </button>
+            </div>
+          </div>
+
+          <!-- Conector opcional Gemini API Gratis -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-2">
+            <label class="block text-xs font-bold text-slate-300">🔑 Clave Google Gemini API Gratis (Opcional)</label>
+            <input id="gemini-api-key" type="password" placeholder="El motor local funciona al 100% sin clave..." class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            <p class="text-xs text-slate-400">Ya incluye el motor comercial autónomo gratis. Si pegas una API Key gratuita de Google AI Studio, usará Gemini 2.5 Flash.</p>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Ventana de Chat en Vivo -->
+        <div class="lg:col-span-8 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col h-[640px] shadow-2xl overflow-hidden">
+          <div class="p-4 bg-slate-950 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 font-black flex items-center justify-center">
+                IA
+              </div>
+              <div>
+                <div class="font-bold text-white text-sm">Gio IA — Cerrador Automático de Ventas</div>
+                <div class="text-xs text-emerald-400">● En línea • Responde en menos de 1 segundo</div>
+              </div>
+            </div>
+            <button onclick="switchMainTab('cotizador')" class="px-3 py-1.5 rounded-lg bg-slate-800 text-amber-400 text-xs font-bold">
+              Abrir Calculadora m²
+            </button>
+          </div>
+
+          <div id="ai-chat-messages" class="flex-1 p-5 overflow-y-auto custom-scroll space-y-4"></div>
+
+          <div class="p-4 bg-slate-950 border-t border-slate-800 flex gap-2">
+            <input
+              id="ai-chat-input"
+              type="text"
+              placeholder="Escribe como un cliente (ej: 'Tengo un terreno de 90m2 en Piura' o 'Quiero un dibujo gratis primero')..."
+              onkeydown="if(event.key==='Enter') sendUserChatMessage()"
+              class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white"
+            />
+            <button onclick="sendUserChatMessage()" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm">
+              Enviar →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 4: FÁBRICA DE REDES SOCIALES (TIKTOK / IG / SHORTS) + VIDEO 9:16
+         ====================================================================== -->
+    <section id="sec-fabrica-redes" class="hidden py-10 max-w-7xl mx-auto px-4 space-y-10">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold">AUTOMATIZACIÓN DE MARKETING ($0)</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">Fábrica de Videos Virales (TikTok, Instagram & Shorts)</h2>
+        <p class="text-slate-400 text-sm">Convierte tus fotos y videos improvisados de obra o capturas de planos en Reels/TikToks verticales 9:16 con guiones persuasivos y calendario de 30 días.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Generador de Guiones y Textos -->
+        <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-5">
+          <h3 class="text-lg font-bold text-white border-b border-slate-800 pb-3">1. Configura tu Foto/Video Improvisado y Guion Viral</h3>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">🎬 Elige la Plantilla Ganadora según el material que tengas:</label>
+            <select id="cf-template" onchange="loadContentTemplate()" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white"></select>
+          </div>
+
+          <!-- Selector de Foto de Fondo (Sube la tuya o usa las generadas) -->
+          <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-2.5">
+            <div class="text-xs font-bold text-amber-400">📸 Sube tu Foto Improvisada de Obra / Plano o prueba con estas:</div>
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="cursor-pointer px-3 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs">
+                📂 Subir Mi Foto Improvisada
+                <input type="file" accept="image/*" onchange="uploadImprovisedMediaForReel(event)" class="hidden" />
+              </label>
+              <button onclick="switchPresetReelImage('assets/img/antes_despues_remodelacion.jpg')" class="px-3 py-2 rounded-lg bg-slate-800 text-xs text-slate-200 hover:bg-slate-700">
+                Usar Obra Antes/Después
+              </button>
+              <button onclick="switchPresetReelImage('assets/img/plano_3d_isometrico.jpg')" class="px-3 py-2 rounded-lg bg-slate-800 text-xs text-slate-200 hover:bg-slate-700">
+                Usar Plano 3D Casa 120m²
+              </button>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Texto Gancho Superior (0-3 seg)</label>
+              <input id="cf-hook" type="text" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Subtítulo Beneficio Central</label>
+              <input id="cf-sub" type="text" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1">Llamado a la Acción Inferior (CTA)</label>
+            <input id="cf-cta" type="text" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          </div>
+
+          <!-- Guion Segundo a Segundo para Voz en Off o CapCut -->
+          <div class="space-y-2">
+            <div class="text-xs font-bold text-sky-400">🎙️ Guion Segundo a Segundo (Para leer con tu celular o voz IA en CapCut):</div>
+            <div id="cf-script-steps" class="space-y-2"></div>
+          </div>
+
+          <!-- Copy + Hashtags -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-emerald-400">📝 Descripción lista para copiar en TikTok / Instagram / Facebook:</label>
+              <button id="btn-copy-caption" onclick="copyCaptionToClipboard()" class="px-3 py-1 rounded bg-emerald-600 text-white text-xs font-bold">
+                📋 Copiar Descripción y Hashtags
+              </button>
+            </div>
+            <textarea id="cf-caption" rows="3" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-xs text-slate-200"></textarea>
+          </div>
+        </div>
+
+        <!-- Estudio Visual 9:16 en Vivo (Graba Video real .webm) -->
+        <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col items-center space-y-4">
+          <div class="text-center space-y-1">
+            <span class="text-xs font-bold text-amber-400">ESTUDIO TIKTOK / REELS 9:16 EN VIVO</span>
+            <h4 class="text-base font-bold text-white">Previsualizador y Grabador Automático</h4>
+          </div>
+
+          <canvas id="reel-canvas" width="320" height="568" class="rounded-2xl border-2 border-slate-700 shadow-2xl"></canvas>
+
+          <button onclick="recordAndDownloadReelVideo()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg">
+            🎥 Grabar y Descargar Video Vertical (.WEBM)
+          </button>
+          <p id="reel-record-status" class="text-xs text-emerald-400 text-center">
+            Convierte automáticamente tu foto improvisada en un video animado con zoom y textos vendedores.
+          </p>
+
+          <!-- Enlaces directos a los Programadores Oficiales Gratuitos -->
+          <div class="w-full pt-3 border-t border-slate-800 space-y-2">
+            <div class="text-xs font-bold text-slate-300 text-center">🚀 Publicar / Programar Gratis en 1 Clic:</div>
+            <div class="grid grid-cols-3 gap-2 text-center text-xs">
+              <a href="https://www.tiktok.com/tiktokstudio/upload" target="_blank" class="p-2 rounded-lg bg-slate-950 border border-slate-700 hover:border-amber-500 text-white font-semibold">
+                TikTok Studio ↗
+              </a>
+              <a href="https://business.facebook.com/latest/composer" target="_blank" class="p-2 rounded-lg bg-slate-950 border border-slate-700 hover:border-amber-500 text-white font-semibold">
+                Meta Suite (IG/FB) ↗
+              </a>
+              <a href="https://studio.youtube.com/" target="_blank" class="p-2 rounded-lg bg-slate-950 border border-slate-700 hover:border-amber-500 text-white font-semibold">
+                YouTube Shorts ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendario Automatizado de Publicaciones -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-white">📅 Planificador Semanal Automático de Redes Sociales</h3>
+            <p class="text-xs text-slate-400">Programa toda la semana cada domingo en 45 minutos usando TikTok Studio y Meta Business Suite ($0).</p>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 uppercase">
+                <th class="py-2.5 px-3">Día</th>
+                <th class="py-2.5 px-3">Red Social</th>
+                <th class="py-2.5 px-3">Pilar de Venta</th>
+                <th class="py-2.5 px-3">Tema / Gancho del Video</th>
+                <th class="py-2.5 px-3">Material Usado</th>
+                <th class="py-2.5 px-3">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 5: PANEL CEO — CRM ANTI-NO-PAGO + MARCA DE AGUA + CONTRATO PDF
+         ====================================================================== -->
+    <section id="sec-panel-ceo" class="hidden py-10 max-w-7xl mx-auto px-4 space-y-10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold">CONTROL INTERNO DEL NEGOCIO</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">CRM de Ventas, Blindador de Planos y Órdenes de Servicio</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5">
+            <div class="text-xs text-slate-400">Proyectos Activos</div>
+            <div id="kpi-count" class="text-base font-black text-white">3 proyectos</div>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5">
+            <div class="text-xs text-slate-400">Valor en Embudo</div>
+            <div id="kpi-pipeline" class="text-base font-black text-amber-400">S/ 17,678</div>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5">
+            <div class="text-xs text-slate-400">Ya Cobrado (Seguros)</div>
+            <div id="kpi-collected" class="text-base font-black text-emerald-400">S/ 12,828</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLA CRM DE SEGUIMIENTO DE HITOS DE PAGO (50% - 30% - 20%) -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+        <h3 class="text-lg font-bold text-white">1. Control de Clientes y Candados de Pago (50% - 30% - 20%)</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 uppercase">
+                <th class="py-2.5 px-3">Código</th>
+                <th class="py-2.5 px-3">Cliente / Ciudad</th>
+                <th class="py-2.5 px-3">Servicio y Metraje</th>
+                <th class="py-2.5 px-3">Desglose 50-30-20</th>
+                <th class="py-2.5 px-3">Estado del Candado de Pago</th>
+                <th class="py-2.5 px-3">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="crm-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DOS HERRAMIENTAS DE BLINDAJE: PROTECTOR DE MARCA DE AGUA + ORDEN DE SERVICIO PDF -->
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Blindador de Planos con Marca de Agua Anti-Robo -->
+        <div class="lg:col-span-6 bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-bold text-white">2. Blindador de Planos (Marca de Agua)</h3>
+            <span class="text-xs px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 font-bold">Anti-Fuga de Clientes</span>
+          </div>
+          <p class="text-xs text-slate-400">
+            Antes de enviar un avance por WhatsApp (Hito 1 o Hito 2), sube aquí la captura de tu plano. El sistema estampa la marca de agua cruzada para que el cliente pueda revisarlo pero <b>no pueda construir ni plotear sin pagarte el 20% final</b>.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Texto de Propiedad / Cliente</label>
+              <input id="wm-client" type="text" value="CLIENTE: CARLOS MENDOZA (#PG-2026-1041)" oninput="renderWatermarkedBlueprint()" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Estado del Entregable</label>
+              <input id="wm-status" type="text" value="AVANCE HITO 1 (50% ABONADO) - PROHIBIDA SU EJECUCIÓN" oninput="renderWatermarkedBlueprint()" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <label class="cursor-pointer px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold text-amber-400">
+              📐 Subir Captura de Mi Plano (.JPG / .PNG)
+              <input type="file" accept="image/*" onchange="uploadBlueprintForWatermark(event)" class="hidden" />
+            </label>
+            <button onclick="downloadWatermarkedImage()" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold">
+              ⬇️ Descargar Plano Protegido para WhatsApp
+            </button>
+          </div>
+
+          <canvas id="watermark-canvas" width="560" height="380" class="w-full rounded-xl border border-slate-700 shadow-lg"></canvas>
+        </div>
+
+        <!-- Orden de Servicio / Contrato Formal Imprimible en PDF -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-2xl p-4">
+            <div>
+              <h3 class="text-base font-bold text-white">3. Orden de Servicio / Contrato Blindado</h3>
+              <p class="text-xs text-slate-400">Envía este PDF antes del primer pago para transmitir 100% formalidad.</p>
+            </div>
+            <button onclick="window.print()" class="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs shadow">
+              🖨️ Imprimir / Guardar PDF
+            </button>
+          </div>
+
+          <!-- Documento Formal Imprimible -->
+          <div id="printable-contract" class="bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-5 border border-slate-300">
+            <div class="flex items-start justify-between border-b-2 border-slate-900 pb-4">
+              <div>
+                <div class="text-lg sm:text-xl font-black tracking-tight text-slate-900">GIO, GRUPO INGENIEROS S.A.C.</div>
+                <div class="text-xs font-bold text-slate-700">Nombre Comercial: PLANOS GIO / GIOGRIN SAC • RUC: 20610282963</div>
+                <div class="text-xs text-slate-600">Partida Registral SUNARP N° 15146750 • Emisor Electrónico SUNAT (Factura / Boleta)</div>
+                <div class="text-xs text-slate-500">Domicilio Fiscal: Av. Arequipa Nro. 1421 Dpto. 1306, Urb. Santa Beatriz, Lima</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs font-bold uppercase text-slate-500">Orden de Servicio Oficial</div>
+                <div id="ct-order-id" class="text-base font-black text-amber-600">PG-2026-1041</div>
+                <div class="text-xs text-slate-500">Fecha: <span id="ct-date">24/10/2026</span></div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 bg-slate-100 p-3.5 rounded-xl text-xs">
+              <div>
+                <span class="text-slate-500 block">Cliente Titular:</span>
+                <b id="ct-client-name" class="text-slate-900 text-sm">Carlos Mendoza</b>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Ubicación del Proyecto:</span>
+                <b id="ct-client-city" class="text-slate-900 text-sm">Arequipa</b>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Servicio Contratado:</span>
+                <b id="ct-service-name" class="text-slate-900">🥇 Paquete Construcción Segura</b>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Área y Niveles:</span>
+                <b id="ct-area" class="text-slate-900">120 m² (2 niveles)</b>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-xs font-bold uppercase text-slate-700">Cronograma Obligatorio de Pagos y Entregables:</div>
+              <table class="w-full text-xs border border-slate-300">
+                <thead class="bg-slate-900 text-white">
+                  <tr>
+                    <th class="p-2 text-left">Hito</th>
+                    <th class="p-2 text-left">Condición y Entregable</th>
+                    <th class="p-2 text-right">Monto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-200">
+                    <td class="p-2 font-bold">Hito 1 (50%)</td>
+                    <td class="p-2">Adelanto de inicio para apertura de expediente y diseño de distribución.</td>
+                    <td id="ct-h1" class="p-2 text-right font-bold">S/ 1,404</td>
+                  </tr>
+                  <tr class="border-b border-slate-200">
+                    <td class="p-2 font-bold">Hito 2 (30%)</td>
+                    <td class="p-2">Aprobación de arquitectura en Visor Protegido y pase a Especialidades/3D.</td>
+                    <td id="ct-h2" class="p-2 text-right font-bold">S/ 842</td>
+                  </tr>
+                  <tr class="border-b border-slate-200">
+                    <td class="p-2 font-bold">Hito 3 (20%)</td>
+                    <td class="p-2">Liquidación contra-entrega para liberación de PDFs HD y editables AutoCAD (.DWG).</td>
+                    <td id="ct-h3" class="p-2 text-right font-bold">S/ 562</td>
+                  </tr>
+                  <tr class="bg-amber-50 font-black">
+                    <td class="p-2" colspan="2">INVERSIÓN TOTAL ACORDADA</td>
+                    <td id="ct-total" class="p-2 text-right text-sm">S/ 2,808</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="text-xs text-slate-600 space-y-1.5 leading-relaxed border-t border-slate-200 pt-3">
+              <p><b>Respaldo Legal y Facturación:</b> Servicio prestado formalmente por <b>GIO, GRUPO INGENIEROS S.A.C. (RUC 20610282963)</b>, inscrita en la Partida Registral N° 15146750 (SUNARP Lima), representada por su Gerente General <b>Alonzo Adrian Angulo Chirinos</b>. Se emite Boleta o Factura Electrónica SUNAT.</p>
+              <p><b>Cláusula de Protección y Conformidad:</b> Las entregas preliminares (Hitos 1 y 2) se presentan con marca de agua de seguridad para revisión. Una vez abonado el Hito 3 (20% final), se liberan de inmediato los planos finales en Alta Resolución listos para plotear y los archivos editables.</p>
+              <p><b>Medios de Pago Oficiales Autorizados:</b> <b>Yape Oficial: 993 952 844</b> • WhatsApp de Confirmación: <b>+51 993 952 844</b> / +51 901 632 203 • Correo: <b>alonzoadrianangulochirinos@gmail.com</b>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-4 items-center">
+      <div>
+        <div class="font-black text-white text-sm">GIO, GRUPO INGENIEROS S.A.C. — PLANOS GIO</div>
+        <div>RUC: <b>20610282963</b> • Partida SUNARP: <b>15146750</b> (Activo y Habido)</div>
+      </div>
+      <div class="md:text-center">
+        <div>📍 Av. Arequipa Nro. 1421 Dpto. 1306, Urb. Santa Beatriz, Lima</div>
+        <div>✉️ alonzoadrianangulochirinos@gmail.com</div>
+      </div>
+      <div class="md:text-right">
+        <div class="font-bold text-amber-400">📱 Yape / WhatsApp Oficial: 993 952 844</div>
+        <div>Central Alterna: 901 632 203 • Emisor de Factura y Boleta Electrónica</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+{
+  "fecha_generacion": "2026-10-24T11:59:08.151913",
+  "total_archivos_multimedia": 3,
+  "reglas_negocio_activas": {
+    "empresa": "Planos Gio",
+    "razon_social": "GIO, GRUPO INGENIEROS S.A.C.",
+    "nombre_comercial": "GIOGRIN SAC",
+    "ruc": "20610282963",
+    "partida_registral_sunarp": "15146750",
+    "estado_sunat": "ACTIVO / HABIDO (Emisor Electrónico de Factura y Boleta)",
+    "domicilio_fiscal": "Av. Arequipa Nro. 1421 Dpto. 1306, Urb. Santa Beatriz, Lima - Lima",
+    "gerente_general": "Alonzo Adrian Angulo Chirinos",
+    "socio": "Augusto Franco Angulo Chirinos",
+    "correo_oficial": "alonzoadrianangulochirinos@gmail.com",
+    "yape_whatsapp_principal": "993952844",
+    "telefono_secundario": "901632203",
+    "cobertura_planos": "Todo el Perú (24 Departamentos + Callao - 100% Online)",
+    "cobertura_remodelacion": "Lima Metropolitana y Callao (Obra física)",
+    "pivot_provincias": "Pack Remodelación a Distancia (Planos + 3D + Metrado Anti-Engaño)",
+    "candado_pagos": {
+      "yape_oficial": "993 952 844",
+      "visita_o_reserva_inicial_soles": 80,
+      "hito_1_inicio_pct": 50,
+      "hito_2_avance_marca_agua_pct": 30,
+      "hito_3_liberacion_cad_pdf_pct": 20
+    },
+    "paquetes_m2": {
+      "planos_esencial": {
+        "nombre": "Paquete Esencial (Arquitectura 2D)",
+        "tarifa_m2": 10,
+        "minimo": 450
+      },
+      "planos_completo": {
+        "nombre": "Paquete Construcción Segura (Todas las Especialidades)",
+        "tarifa_m2": 18,
+        "minimo": 850
+      },
+      "planos_premium3d": {
+        "nombre": "Paquete Premium Visual 360° (Planos + 3D + Metrado)",
+        "tarifa_m2": 24,
+        "minimo": 1200
+      },
+      "remodelacion_lima": {
+        "nombre": "Remodelación Integral Llave en Mano (Solo Lima)",
+        "tarifa_m2": 480,
+        "minimo": 2800
+      },
+      "remodelacion_distancia": {
+        "nombre": "Pack Remodelación a Distancia (Provincias)",
+        "tarifa_m2": 22,
+        "minimo": 650
+      }
+    }
+  },
+  "campanas_listas_para_publicar": [
+    {
+      "id": "POST-01",
+      "archivo_origen": "assets\\img\\antes_despues_remodelacion.jpg",
+      "red_recomendada": "TikTok + Instagram Reels + YouTube Shorts",
+      "gancho_3_segundos": "✨ De obra gris improvisada a remodelación moderna en Lima (Antes Despues Remodelacion)",
+      "guion_paso_a_paso": [
+        "00-03s: Muestra la foto/video de obra en bruto. Texto: '¿Quieres remodelar tu casa o depa en Lima sin que el presupuesto se dispare?'",
+        "03-12s: Explica cómo primero diseñamos el plano y la vista 3D antes de picar una pared.",
+        "12-22s: Muestra el acabado propuesto con lista exacta de materiales para no comprar de más.",
+        "22-30s: CTA: 'Cotiza tu remodelación en Lima o tus planos en todo el Perú en el link del perfil.'"
+      ],
+      "hashtags": "#PlanosPeru #ArquitecturaPeru #RemodelacionLima #ConstruccionSegura #PlanosGio",
+      "herramienta_programacion_gratis": "TikTok Studio Web + Meta Business Suite"
+    },
+    {
+      "id": "POST-02",
+      "archivo_origen": "assets\\img\\infografia_ciclo.jpg",
+      "red_recomendada": "TikTok + Facebook Reels + Instagram",
+      "gancho_3_segundos": "🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Infografia Ciclo)",
+      "guion_paso_a_paso": [
+        "00-03s: Zoom al plano o vista 3D. Texto: 'El error de S/ 10,000 que muchos cometen al construir en Perú'.",
+        "03-12s: Construir sin planos hace que tengas cuartos oscuros y gastes 20% más en cemento y fierro.",
+        "12-22s: En Planos Gio entregamos Planos 2D + Vistas 3D + Guía de Materiales Anti-Engaño para todo el Perú.",
+        "22-30s: CTA: 'Calcula el precio de tus planos en 10 segundos en nuestra web oficial.'"
+      ],
+      "hashtags": "#PlanosPeru #ArquitecturaPeru #RemodelacionLima #ConstruccionSegura #PlanosGio",
+      "herramienta_programacion_gratis": "TikTok Studio Web + Meta Business Suite"
+    },
+    {
+      "id": "POST-03",
+      "archivo_origen": "assets\\img\\plano_3d_isometrico.jpg",
+      "red_recomendada": "TikTok + Facebook Reels + Instagram",
+      "gancho_3_segundos": "🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Plano 3D Isometrico)",
+      "guion_paso_a_paso": [
+        "00-03s: Zoom al plano o vista 3D. Texto: 'El error de S/ 10,000 que muchos cometen al construir en Perú'.",
+        "03-12s: Construir sin planos hace que tengas cuartos oscuros y gastes 20% más en cemento y fierro.",
+        "12-22s: En Planos Gio entregamos Planos 2D + Vistas 3D + Guía de Materiales Anti-Engaño para todo el Perú.",
+        "22-30s: CTA: 'Calcula el precio de tus planos en 10 segundos en nuestra web oficial.'"
+      ],
+      "hashtags": "#PlanosPeru #ArquitecturaPeru #RemodelacionLima #ConstruccionSegura #PlanosGio",
+      "herramienta_programacion_gratis": "TikTok Studio Web + Meta Business Suite"
+    }
+  ],
+  "simulaciones_ejemplo": [
+    {
+      "orden_id": "PG-2026-115908",
+      "ciudad": "Arequipa",
+      "es_lima": false,
+      "paquete_id": "planos_completo",
+      "paquete_nombre": "Paquete Construcción Segura (Todas las Especialidades)",
+      "regla_geografica": "Cobertura Estándar",
+      "m2_base": 120,
+      "pisos": 2,
+      "inversion_total_soles": 3564,
+      "candado_pagos": {
+        "hito_1_adelanto_50_soles": 1782,
+        "hito_2_avance_30_soles": 1069,
+        "hito_3_entrega_20_soles": 713,
+        "opcion_reserva_visita_descontable_soles": 80
+      },
+      "metrado_anti_engano_referencial": {
+        "bolsas_cemento_aprox": 912,
+        "millares_ladrillo_kk_aprox": 9.1,
+        "varillas_fierro_aprox": 576,
+        "salidas_agua_luz_aprox": 108
+      }
+    },
+    {
+      "orden_id": "PG-2026-115908",
+      "ciudad": "Surco, Lima",
+      "es_lima": true,
+      "paquete_id": "remodelacion_lima",
+      "paquete_nombre": "Remodelación Integral Llave en Mano (Solo Lima)",
+      "regla_geografica": "Cobertura Estándar",
+      "m2_base": 32,
+      "pisos": 1,
+      "inversion_total_soles": 15360,
+      "candado_pagos": {
+        "hito_1_adelanto_50_soles": 7680,
+        "hito_2_avance_30_soles": 4608,
+        "hito_3_entrega_20_soles": 3072,
+        "opcion_reserva_visita_descontable_soles": 80
+      },
+      "metrado_anti_engano_referencial": {
+        "bolsas_cemento_aprox": 122,
+        "millares_ladrillo_kk_aprox": 1.2,
+        "varillas_fierro_aprox": 77,
+        "salidas_agua_luz_aprox": 14
+      }
+    },
+    {
+      "orden_id": "PG-2026-115908",
+      "ciudad": "Trujillo",
+      "es_lima": false,
+      "paquete_id": "remodelacion_distancia",
+      "paquete_nombre": "Pack Remodelación a Distancia (Provincias)",
+      "regla_geografica": "PIVOT AUTOMÁTICO (Trujillo): La obra física es solo en Lima. Se asignó el Pack Remodelación a Distancia (Planos + 3D + Lista de Materiales).",
+      "m2_base": 80,
+      "pisos": 1,
+      "inversion_total_soles": 1760,
+      "candado_pagos": {
+        "hito_1_adelanto_50_soles": 880,
+        "hito_2_avance_30_soles": 528,
+        "hito_3_entrega_20_soles": 352,
+        "opcion_reserva_visita_descontable_soles": 80
+      },
+      "metrado_anti_engano_referencial": {
+        "bolsas_cemento_aprox": 304,
+        "millares_ladrillo_kk_aprox": 3.0,
+        "varillas_fierro_aprox": 192,
+        "salidas_agua_luz_aprox": 36
+      }
+    }
+  ]
+}
