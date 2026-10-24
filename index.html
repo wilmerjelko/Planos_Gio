@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <!-- Pestañas del Ecosistema -->
+      <!-- Pestañas del Ecosistema (Vista Cliente + Modo CEO en la Nube) -->
       <nav class="flex flex-wrap items-center gap-1.5">
         <button id="nav-web-publica" onclick="switchMainTab('web-publica')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-amber-500 text-slate-950 shadow transition">
           🌐 1. Web & Portafolio
@@ -36,13 +36,16 @@
           🧮 2. Cotizador + Metrado
         </button>
         <button id="nav-agente-ia" onclick="switchMainTab('agente-ia')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
-          🤖 3. Vendedor IA 24/7
+          🤖 3. Asesor IA 24/7
         </button>
-        <button id="nav-fabrica-redes" onclick="switchMainTab('fabrica-redes')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+        <button id="nav-fabrica-redes" onclick="switchMainTab('fabrica-redes')" class="ceo-only-tab hidden px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-amber-300 border border-amber-500/40 hover:bg-slate-800 transition">
           🎬 4. Fábrica TikTok/IG
         </button>
-        <button id="nav-panel-ceo" onclick="switchMainTab('panel-ceo')" class="px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:bg-slate-800 transition">
+        <button id="nav-panel-ceo" onclick="switchMainTab('panel-ceo')" class="ceo-only-tab hidden px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-emerald-300 border border-emerald-500/40 hover:bg-slate-800 transition">
           🔒 5. CRM, Pagos & Marca Agua
+        </button>
+        <button id="btn-toggle-ceo" onclick="toggleCEOMode()" title="Activar herramientas internas de GIO SAC desde cualquier celular o PC" class="px-2.5 py-2 rounded-lg text-xs font-bold bg-slate-900 border border-slate-700 text-slate-400 hover:text-amber-400 transition">
+          🔐 Modo CEO
         </button>
       </nav>
     </div>

@@ -156,7 +156,9 @@ def escanear_y_generar_campanas() -> dict:
         campanas.append(
             {
                 "id": f"POST-{idx:02d}",
-                "archivo_origen": str(archivo.relative_to(BASE_DIR)),
+                "titulo": nombre,
+                "archivo_origen": str(archivo.relative_to(BASE_DIR)).replace("\\", "/"),
+                "es_extra": archivo.parent == MEDIA_DIR,
                 "red_recomendada": red_principal,
                 "gancho_3_segundos": gancho,
                 "guion_paso_a_paso": guion,

@@ -14,8 +14,10 @@
   // Inicialización al cargar el DOM
   document.addEventListener("DOMContentLoaded", () => {
     loadPersistedState();
+    initCEOModeFromUrl();
     populateSelectors();
     renderPortfolio();
+    syncCloudMediaPortfolio();
     calculateInstantQuote();
     initAIChat();
     initContentFactory();
@@ -23,6 +25,72 @@
     renderCRM();
     renderCalendar();
   });
+
+  function initCEOModeFromUrl() {
+    if (window.location.hash.includes("ceo") || localStorage.getItem("planos_gio_ceo_mode") === "1") {
+      setCEOModeVisible(true);
+    }
+  }
+
+  function setCEOModeVisible(visible) {
+    document.querySelectorAll(".ceo-only-tab").forEach((el) => {
+      if (visible) el.classList.remove("hidden");
+      else el.classList.add("hidden");
+    });
+    const btn = document.getElementById("btn-toggle-ceo");
+    if (btn) {
+      btn.textContent = visible ? "🔓 CEO Activo" : "🔐 Modo CEO";
+      btn.className = visible
+        ? "px-2.5 py-2 rounded-lg text-xs font-bold bg-emerald-500/20 border border-emerald-500/50 text-emerald-300 transition"
+        : "px-2.5 py-2 rounded-lg text-xs font-bold bg-slate-900 border border-slate-700 text-slate-400 hover:text-amber-400 transition";
+    }
+    localStorage.setItem("planos_gio_ceo_mode", visible ? "1" : "0");
+  }
+
+  window.toggleCEOMode = function () {
+    const currentlyActive = localStorage.getItem("planos_gio_ceo_mode") === "1";
+    if (currentlyActive) {
+      setCEOModeVisible(false);
+      switchMainTab("web-publica");
+    } else {
+      setCEOModeVisible(true);
+      switchMainTab("panel-ceo");
+    }
+  };
+
+  // Sincronización 100% Cloud: Carga automática de fotos/videos subidos al repositorio sin depender de la PC
+  async function syncCloudMediaPortfolio() {
+    try {
+      const res = await fetch("data/reporte_ejecutivo_gio.json?t=" + Date.now());
+      if (!res.ok) return;
+      const report = await res.json();
+      if (report && Array.isArray(report.campanas_listas_para_publicar)) {
+        let added = false;
+        report.campanas_listas_para_publicar.forEach((c) => {
+          if (c.es_extra && c.archivo_origen) {
+            const exists = DATA.portfolio.some((p) => p.image === c.archivo_origen);
+            if (!exists) {
+              DATA.portfolio.unshift({
+                id: c.id,
+                title: c.titulo || "Proyecto Real - Planos Gio",
+                location: "Perú • GIO, GRUPO INGENIEROS S.A.C.",
+                type: "Trabajo Verificado en Obra / Diseño",
+                image: c.archivo_origen,
+                metrics: "Calidad Garantizada RUC 20610282963",
+                beforeProblem: "Registro real de campo / desarrollo técnico.",
+                solution: "Diseño optimizado y supervisión profesional por GIO, GRUPO INGENIEROS S.A.C.",
+                priceRef: "Cotización instantánea en web"
+              });
+              added = true;
+            }
+          }
+        });
+        if (added) renderPortfolio();
+      }
+    } catch (e) {
+      // Silencioso en modo offline
+    }
+  }
 
   function loadPersistedState() {
     const savedLeads = localStorage.getItem("planos_gio_crm_leads");
@@ -304,6 +372,7 @@
     crmLeads.unshift(newLead);
     saveCRMState();
     populateContractFromLead(newLead.id);
+    sendLeadToCloudEmail(newLead);
 
     if (actionType === "ia") {
       switchMainTab("agente-ia");
@@ -319,6 +388,7 @@
         appendChatMessage("ai", reply);
       }, 450);
     } else if (actionType === "contract") {
+      setCEOModeVisible(true);
       switchMainTab("panel-ceo");
       const contractEl = document.getElementById("printable-contract");
       if (contractEl) contractEl.scrollIntoView({ behavior: "smooth" });
@@ -336,6 +406,33 @@
       window.open(`https://wa.me/${DATA.config.whatsappNumber}?text=${msg}`, "_blank");
     }
   };
+
+  // Notificación Cloud 24/7 (Funciona con la PC apagada): envía la cotización al correo oficial de la empresa
+  function sendLeadToCloudEmail(lead) {
+    if (!lead || lead.phone === "Por confirmar") return;
+    try {
+      fetch(`https://formsubmit.co/ajax/${DATA.config.emailOficial}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          _subject: `🏗️ Nueva Cotización Web ${lead.id} - ${lead.clientName} (${lead.city})`,
+          Orden_ID: lead.id,
+          Cliente: lead.clientName,
+          WhatsApp_Cliente: lead.phone,
+          Ciudad: lead.city,
+          Servicio: lead.serviceName,
+          Area_Niveles: `${lead.m2} m2 (${lead.floors} pisos)`,
+          Inversion_Total: `S/ ${lead.totalPrice}`,
+          Adelanto_50_Hito1: `S/ ${lead.hito1Amount} (Yape 993 952 844)`
+        })
+      }).catch(() => {});
+    } catch (e) {
+      // Silencioso
+    }
+  }
 
   // ==========================================================================
   // MÓDULO 2: AGENTE DE VENTAS IA 24/7 CON REGLAS DE NEGOCIO Y CIERRE

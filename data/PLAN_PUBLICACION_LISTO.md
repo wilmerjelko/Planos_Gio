@@ -1,9 +1,9 @@
 # 🚀 Plan de Publicación y Control Automático Generado — Planos Gio
-**Fecha de ejecución:** 2026-10-24T11:59:08.151913
+**Fecha de ejecución:** 2026-10-24T12:05:29.439187
 **Archivos de fotos/videos procesados:** 3
 
 ## 1. Guiones Generados Automáticamente para tus Fotos y Videos
-### 🎬 POST-01 — Archivo: `assets\img\antes_despues_remodelacion.jpg`
+### 🎬 POST-01 — Archivo: `assets/img/antes_despues_remodelacion.jpg`
 - **Redes:** TikTok + Instagram Reels + YouTube Shorts
 - **Gancho en pantalla (0-3s):** *✨ De obra gris improvisada a remodelación moderna en Lima (Antes Despues Remodelacion)*
   - 00-03s: Muestra la foto/video de obra en bruto. Texto: '¿Quieres remodelar tu casa o depa en Lima sin que el presupuesto se dispare?'
@@ -12,7 +12,7 @@
   - 22-30s: CTA: 'Cotiza tu remodelación en Lima o tus planos en todo el Perú en el link del perfil.'
 - **Hashtags:** `#PlanosPeru #ArquitecturaPeru #RemodelacionLima #ConstruccionSegura #PlanosGio`
 
-### 🎬 POST-02 — Archivo: `assets\img\infografia_ciclo.jpg`
+### 🎬 POST-02 — Archivo: `assets/img/infografia_ciclo.jpg`
 - **Redes:** TikTok + Facebook Reels + Instagram
 - **Gancho en pantalla (0-3s):** *🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Infografia Ciclo)*
   - 00-03s: Zoom al plano o vista 3D. Texto: 'El error de S/ 10,000 que muchos cometen al construir en Perú'.
@@ -21,7 +21,7 @@
   - 22-30s: CTA: 'Calcula el precio de tus planos en 10 segundos en nuestra web oficial.'
 - **Hashtags:** `#PlanosPeru #ArquitecturaPeru #RemodelacionLima #ConstruccionSegura #PlanosGio`
 
-### 🎬 POST-03 — Archivo: `assets\img\plano_3d_isometrico.jpg`
+### 🎬 POST-03 — Archivo: `assets/img/plano_3d_isometrico.jpg`
 - **Redes:** TikTok + Facebook Reels + Instagram
 - **Gancho en pantalla (0-3s):** *🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Plano 3D Isometrico)*
   - 00-03s: Zoom al plano o vista 3D. Texto: 'El error de S/ 10,000 que muchos cometen al construir en Perú'.

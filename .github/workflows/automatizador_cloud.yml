@@ -1,0 +1,36 @@
+name: Automatizador Cloud Planos Gio (24/7 Sin PC)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'mis_fotos_y_videos/**'
+      - 'assets/img/**'
+      - 'automatizador_gio.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  escanear-y-actualizar-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio en la nube
+        uses: actions/checkout@v4
+
+      - name: Configurar Python en el servidor Cloud de GitHub
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Escanear fotos/videos y actualizar campanas + portafolio
+        run: python automatizador_gio.py --scan
+
+      - name: Guardar cambios automaticamente en la web publica
+        run: |
+          git config --local user.email "alonzoadrianangulochirinos@gmail.com"
+          git config --local user.name "Automatizador Cloud Planos Gio"
+          git add data/
+          git diff --staged --quiet || git commit -m "Auto-actualizacion Cloud de campanas y portafolio"
+          git push

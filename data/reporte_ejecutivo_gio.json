@@ -1,5 +1,5 @@
 {
-  "fecha_generacion": "2026-10-24T11:59:08.151913",
+  "fecha_generacion": "2026-10-24T12:05:29.439187",
   "total_archivos_multimedia": 3,
   "reglas_negocio_activas": {
     "empresa": "Planos Gio",
@@ -55,7 +55,9 @@
   "campanas_listas_para_publicar": [
     {
       "id": "POST-01",
-      "archivo_origen": "assets\\img\\antes_despues_remodelacion.jpg",
+      "titulo": "Antes Despues Remodelacion",
+      "archivo_origen": "assets/img/antes_despues_remodelacion.jpg",
+      "es_extra": false,
       "red_recomendada": "TikTok + Instagram Reels + YouTube Shorts",
       "gancho_3_segundos": "✨ De obra gris improvisada a remodelación moderna en Lima (Antes Despues Remodelacion)",
       "guion_paso_a_paso": [
@@ -69,7 +71,9 @@
     },
     {
       "id": "POST-02",
-      "archivo_origen": "assets\\img\\infografia_ciclo.jpg",
+      "titulo": "Infografia Ciclo",
+      "archivo_origen": "assets/img/infografia_ciclo.jpg",
+      "es_extra": false,
       "red_recomendada": "TikTok + Facebook Reels + Instagram",
       "gancho_3_segundos": "🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Infografia Ciclo)",
       "guion_paso_a_paso": [
@@ -83,7 +87,9 @@
     },
     {
       "id": "POST-03",
-      "archivo_origen": "assets\\img\\plano_3d_isometrico.jpg",
+      "titulo": "Plano 3D Isometrico",
+      "archivo_origen": "assets/img/plano_3d_isometrico.jpg",
+      "es_extra": false,
       "red_recomendada": "TikTok + Facebook Reels + Instagram",
       "gancho_3_segundos": "🚫 NO construyas sin antes ver este plano y su ahorro de materiales (Plano 3D Isometrico)",
       "guion_paso_a_paso": [
@@ -98,7 +104,7 @@
   ],
   "simulaciones_ejemplo": [
     {
-      "orden_id": "PG-2026-115908",
+      "orden_id": "PG-2026-120529",
       "ciudad": "Arequipa",
       "es_lima": false,
       "paquete_id": "planos_completo",
@@ -121,7 +127,7 @@
       }
     },
     {
-      "orden_id": "PG-2026-115908",
+      "orden_id": "PG-2026-120529",
       "ciudad": "Surco, Lima",
       "es_lima": true,
       "paquete_id": "remodelacion_lima",
@@ -144,7 +150,7 @@
       }
     },
     {
-      "orden_id": "PG-2026-115908",
+      "orden_id": "PG-2026-120529",
       "ciudad": "Trujillo",
       "es_lima": false,
       "paquete_id": "remodelacion_distancia",
